@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AkdenizApp</string>
+    <string name="button_home_student">Öğrenci</string>
+    <string name="button_home_guest">Ziyaretçi</string>
+</resources>
