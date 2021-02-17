@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".visitorComplaint">
+
+    <TextView
+            android:id="@+id/textView_complaint"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Şikayetlerim" />
+
+    <ListView
+            android:id="@+id/listView_list_of_complaints_visitor"
+            android:layout_width="match_parent"
+            android:layout_height="422dp"
+            android:padding="10dp"/>
+
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:scrollbarFadeDuration="300"
+                android:scrollbarSize="4dp">
+            <Button
+                    android:id="@+id/button_create_visitor_new_complaint"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#62BECC"
+                    android:text="Şikayet Oluştur"
+                    android:textColor="#ffffff"/>
+
+            <Button
+                    android:id="@+id/button_search_complaint"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#2793A4"
+                    android:text="Şikayet Ara"
+                    android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
