@@ -24,7 +24,7 @@
                 app:layout_row="0"
                 app:layout_column="0"
                 android:background="@drawable/akdeniz_logo"
-                android:id="@+id/zerozero" android:contentDescription="TODO"/>
+                android:id="@+id/announcements_button" android:contentDescription="TODO"/>
         <ImageButton
                 android:layout_width="75dp"
                 android:layout_height="75dp"

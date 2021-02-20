@@ -20,5 +20,12 @@ public class MainPage extends AppCompatActivity {
                 startActivity(t);
             }
         });
+        ((ImageButton) findViewById(R.id.announcements_button)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t = new Intent(MainPage.this,Announcements_stvs.class);
+                startActivity(t);
+            }
+        });
     }
 }
