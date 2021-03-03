@@ -16,8 +16,6 @@ public class ApiHelper extends AsyncTask<String, String, String> {
 
     JSONObject data = new JSONObject();
     String urlString;
-    String headerName;
-    String headerValue;
     public static final int CONNECTION_TIMEOUT=10000;
     public static final int READ_TIMEOUT=15000;
     private HttpResponseImpl httpResponseImpl;
@@ -28,26 +26,7 @@ public class ApiHelper extends AsyncTask<String, String, String> {
         this.method = method;
     }
 
-
-    public void addHeader(String name, String value){
-
-        headerName = name;
-        headerValue = value;
-
-    }
-
-    public void addParam(String key, String value){
-
-        try {
-            data.put(key, value);
-        } catch (JSONException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-
-    }
-
+    // Sunucuya ulaşmak için post methodu
     public String executePost(){  // If you want to use post method to hit server
 
         try {
@@ -60,6 +39,7 @@ public class ApiHelper extends AsyncTask<String, String, String> {
             conn.setRequestProperty("Accept", "application/json");
 
             // setDoInput and setDoOutput method depict handling of both send and receive
+            //Bu yöntemler hem gönderme hem de alma işlemlerini gösterir
             conn.setDoInput(true);
             conn.setDoOutput(true);
 
@@ -125,8 +105,8 @@ public class ApiHelper extends AsyncTask<String, String, String> {
     return "";
 
     }
-
-    public String executeGet(){ //If you want to use get method to hit server
+    //Servera bağlanmak için Get methodu
+    public String executeGet(){
 
         StringBuffer response = new StringBuffer();
         try {
@@ -184,8 +164,11 @@ public class ApiHelper extends AsyncTask<String, String, String> {
         }
         return  "";
     }
+    //Android network işlemlerini farklı bir thread olarak çalıştırır. Bundan dolayı bu istekleri
+    //yapan apihelper classı asynctask classından türemiştir. İstek cevabı geldiğinde onPostExecute metodu
+    //çalışır, çalıştığında istek atan aktivitenin httpResult methodu çalıştırılır. Bu işlemin
+    //yapılabilmesi için aktivity classı, HttpResponseImpl interfacesinden türetilir.
     protected void onPostExecute(String result) {
         httpResponseImpl.httpResult(result);
-
     }
 }

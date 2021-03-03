@@ -17,25 +17,18 @@
                 android:gravity="center"
                 android:text="Şikayetlerim" />
 
-    <ListView
-            android:id="@+id/listView_list_of_complaints_student"
-            android:layout_width="match_parent"
-            android:layout_height="470dp"
-            android:padding="10dp"/>
-
-
-        <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:gravity="bottom"
-                android:scrollbarStyle="insideOverlay">
+        <ListView
+                android:id="@+id/listView_list_of_complaints_student"
+                android:layout_width="match_parent"
+                android:layout_height="584dp"
+                android:layout_marginBottom="50dp"/>
         <Button
                 android:id="@+id/button_create_student_new_complaint"
-                android:layout_width="120dp"
-                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:background="#62BECC"
+                android:layout_marginBottom="1dp"
                 android:text="Şikayet Oluştur"
-                android:textColor="#ffffff" />
-        </RelativeLayout>
+                android:textColor="#ffffff"  />
+
 </LinearLayout>

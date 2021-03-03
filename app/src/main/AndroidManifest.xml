@@ -14,6 +14,22 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".StudentClubs">
+        </activity>
+        <activity android:name=".Classes">
+        </activity>
+        <activity android:name=".Shuttle">
+        </activity>
+        <activity android:name=".feedback">
+        </activity>
+        <activity android:name=".Events">
+        </activity>
+        <activity android:name=".Surveys">
+        </activity>
+        <activity android:name=".Dining">
+        </activity>
+        <activity android:name=".HomePageVisitor">
+        </activity>
         <activity android:name=".AnouncementDetail">
         </activity>
         <activity android:name=".Announcements_stvs">
@@ -26,7 +42,7 @@
         </activity>
         <activity android:name=".StudentNewComplaint">
         </activity>
-        <activity android:name=".MainPage">
+        <activity android:name=".HomePageStudent">
         </activity>
         <activity android:name=".login">
         </activity>

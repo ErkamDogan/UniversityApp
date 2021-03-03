@@ -41,19 +41,12 @@
                 android:scrollbarSize="4dp">
             <Button
                     android:id="@+id/button_create_visitor_new_complaint"
-                    android:layout_width="120dp"
+                    android:layout_width="421dp"
                     android:layout_height="60dp"
                     android:background="#62BECC"
                     android:text="Şikayet Oluştur"
                     android:textColor="#ffffff"/>
 
-            <Button
-                    android:id="@+id/button_search_complaint"
-                    android:layout_width="120dp"
-                    android:layout_height="60dp"
-                    android:background="#2793A4"
-                    android:text="Şikayet Ara"
-                    android:textColor="#ffffff"/>
         </LinearLayout>
 
     </RelativeLayout>

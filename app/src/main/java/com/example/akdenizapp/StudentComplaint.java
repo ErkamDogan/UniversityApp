@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +22,13 @@ public class StudentComplaint extends AppCompatActivity {
         ArrayAdapter<String> data=new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, android.R.id.text1, Complaints);
         listView.setAdapter(data);
+        ((Button) findViewById(R.id.button_create_student_new_complaint)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t = new Intent(StudentComplaint.this,StudentNewComplaint.class);
+                startActivity(t);
+            }
+        });
     /*
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

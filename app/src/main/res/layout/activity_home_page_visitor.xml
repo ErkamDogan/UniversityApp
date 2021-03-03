@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainPage" android:orientation="vertical" android:gravity="center|top">
+        tools:context=".HomePageVisitor" android:orientation="vertical" android:gravity="center|top">
 
     <TextView
             android:text="Akdeniz University"
@@ -30,13 +30,13 @@
                 android:layout_height="75dp"
                 app:layout_row="0"
                 android:background="@drawable/akdeniz_logo"
-                app:layout_column="1" android:id="@+id/zeroone"/>
+                app:layout_column="1" android:id="@+id/events"/>
         <ImageButton
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:background="@drawable/akdeniz_logo"
                 app:layout_row="0"
-                app:layout_column="2" android:id="@+id/complaints_button"/>
+                app:layout_column="2" android:id="@+id/complaints_button_visitor"/>
         <ImageButton
                 android:layout_width="75dp"
                 android:layout_height="75dp"
@@ -46,17 +46,17 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:background="@drawable/akdeniz_logo"
-                android:id="@+id/twozero" app:layout_row="2" app:layout_column="0"/>
+                android:id="@+id/shuttle" app:layout_row="2" app:layout_column="0"/>
         <ImageButton
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:background="@drawable/akdeniz_logo"
-                android:id="@+id/twoone" app:layout_row="2" app:layout_column="1"/>
+                android:id="@+id/feedback" app:layout_row="2" app:layout_column="1"/>
         <ImageButton
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:background="@drawable/akdeniz_logo"
-                android:id="@+id/twotwo" app:layout_row="2" app:layout_column="2"/>
+                android:id="@+id/classes" app:layout_row="2" app:layout_column="2"/>
         <ImageButton
                 android:layout_width="75dp"
                 android:layout_height="75dp"

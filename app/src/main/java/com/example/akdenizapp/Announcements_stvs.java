@@ -43,9 +43,9 @@ public class Announcements_stvs extends AppCompatActivity implements HttpRespons
             }
             ListView listView = (ListView) findViewById(R.id.listView_list_of_announcements_stvs);
             ArrayAdapter<String> data = new ArrayAdapter<String>
-                    (this, android.R.layout.simple_list_item_1, android.R.id.text1, list);
+                    (this, R.layout.listview_announcements, R.id.textView11, list);
             listView.setAdapter(data);
-
+            /* go to announcement link
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -58,7 +58,7 @@ public class Announcements_stvs extends AppCompatActivity implements HttpRespons
                         e.printStackTrace();
                     }
                 }
-            });
+            });*/
             /* go to announcement detail with title and content
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -74,6 +74,19 @@ public class Announcements_stvs extends AppCompatActivity implements HttpRespons
                     }
                 }
             });*/
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                    try {
+                        JSONObject jData = (JSONObject)array.get(i);
+                        Intent t = new Intent(Announcements_stvs.this, AnouncementDetail.class);
+                        t.putExtra("url", jData.get("url").toString());
+                        startActivity(t);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
         } catch (Exception e){
             e.printStackTrace();
         }

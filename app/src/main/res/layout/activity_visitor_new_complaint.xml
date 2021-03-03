@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Kişisel Bilgiler"
-            android:textSize="12sp" />
+            android:textSize="15sp" />
 
     <EditText
             android:id="@+id/editText_write_name"
@@ -52,23 +52,13 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Şikayet"
-            android:textSize="12sp" />
-
-    <EditText
-            android:id="@+id/editText_write_department"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView_complaint"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="10dp"
-            android:hint="Hangi birime ulaştırmak istediğiniz buraya giriniz"
-            android:textSize="10sp" />
+            android:textSize="15sp" />
 
     <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Hangi birime ulaştırmak istediğiniz buraya giriniz"
-            android:id="@+id/spinner"/>
+            android:id="@+id/spinner" android:spinnerMode="dropdown"/>
     <EditText
             android:id="@+id/editText_write_complaint"
             android:layout_width="match_parent"
@@ -76,7 +66,7 @@
             android:layout_below="@+id/textView_complaint"
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="10dp"
-            android:hint="Şikayetinizi buraya yazınız"
+            android:hint="Şikayetinizi buraya yazınız (En fazla 400 karakter)"
             android:textSize="10sp"/>
 
     <TextView
@@ -84,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Fotoğraf Ekle"
-            android:textSize="12sp" />
+            android:textSize="15sp" />
 
     <Button
             android:id="@+id/button_upload_image"

@@ -27,7 +27,7 @@ public class login extends AppCompatActivity {
 
     public static final int CONNECTION_TIMEOUT=10000;
     public static final int READ_TIMEOUT=15000;
-    private EditText etEmail;
+    private EditText etStudentNo;
     private EditText etPassword;
 
     @Override
@@ -36,7 +36,7 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         // Get Reference to variables
-        etEmail =  findViewById(R.id.email);
+        etStudentNo =  findViewById(R.id.student_no);
         etPassword =  findViewById(R.id.password);
 
     }
@@ -45,7 +45,7 @@ public class login extends AppCompatActivity {
     public void checkLogin(View arg0) {
 
         // Get text from email and password field
-        final String email = etEmail.getText().toString();
+        final String email = etStudentNo.getText().toString();
         final String password = etPassword.getText().toString();
 
         // Initialize  AsyncLogin() class with email and password
@@ -77,7 +77,6 @@ public class login extends AppCompatActivity {
                 url = new URL("http://192.168.1.104/akdenizapp/login.php");
 
             } catch (MalformedURLException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
                 return "exception";
             }
@@ -165,7 +164,7 @@ public class login extends AppCompatActivity {
                     use sharedPreferences of Android. and logout button to clear sharedPreferences.
                      */
 
-                    Intent intent = new Intent(login.this,MainPage.class);
+                    Intent intent = new Intent(login.this, HomePageStudent.class);
                     startActivity(intent);
                     login.this.finish();
 

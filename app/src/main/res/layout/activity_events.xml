@@ -6,17 +6,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".Announcements_stvs">
-
+        tools:context=".Events">
 
     <TextView
-            android:text="Duyurular"
+            android:text="Etkinlikler"
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_marginTop="20dp"
             android:textSize="18sp"
             android:gravity="center"
-            android:id="@+id/textduyuru"/>
+            android:id="@+id/textevents"/>
     <ListView
             android:id="@+id/listView_list_of_announcements_stvs"
             android:layout_width="match_parent"
