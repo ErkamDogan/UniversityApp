@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.example.akdenizapp">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.akdenizapp" >
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-            android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme"
-            android:usesCleartextTraffic="true">
-        <activity android:name=".StudentClubs">
+        android:allowBackup="true"
+        android:icon="@drawable/akdeniz_logo"
+        android:label="@string/Header"
+        android:roundIcon="@drawable/akdeniz_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name=".StudentClubs" >
         </activity>
-        <activity android:name=".Classes">
+        <activity android:name=".Classes" >
         </activity>
-        <activity android:name=".Shuttle">
+        <activity android:name=".Shuttle" >
         </activity>
-        <activity android:name=".feedback">
+        <activity android:name=".feedback" >
         </activity>
-        <activity android:name=".Events">
+        <activity android:name=".Events" >
         </activity>
-        <activity android:name=".Surveys">
+        <activity android:name=".Surveys" >
         </activity>
-        <activity android:name=".Dining">
+        <activity android:name=".Dining" >
         </activity>
-        <activity android:name=".HomePageVisitor">
+        <activity android:name=".HomePageVisitor" >
         </activity>
-        <activity android:name=".AnouncementDetail">
+        <activity android:name=".AnouncementDetail" >
         </activity>
-        <activity android:name=".Announcements_stvs">
+        <activity android:name=".Announcements_stvs" >
         </activity>
-        <activity android:name=".VisitorNewComplaint">
+        <activity android:name=".VisitorNewComplaint" >
         </activity>
-        <activity android:name=".visitorComplaint">
+        <activity android:name=".visitorComplaint" >
         </activity>
-        <activity android:name=".StudentComplaint">
+        <activity android:name=".StudentComplaint" >
         </activity>
-        <activity android:name=".StudentNewComplaint">
+        <activity android:name=".StudentNewComplaint" >
         </activity>
-        <activity android:name=".HomePageStudent">
+        <activity android:name=".HomePageStudent" >
         </activity>
-        <activity android:name=".login">
+        <activity android:name=".login" >
         </activity>
         <activity
-                android:name=".MainActivity"
-                android:screenOrientation="portrait"
-                android:theme="@style/AppTheme.noActionBar"
-                tools:ignore="LockedOrientationActivity">
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.noActionBar"
+            tools:ignore="LockedOrientationActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <meta-data
-                android:name="preloaded_fonts"
-                android:resource="@array/preloaded_fonts"/>
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

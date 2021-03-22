@@ -74,7 +74,7 @@ public class login extends AppCompatActivity {
             try {
 
                 // Enter URL address where your php file resides
-                url = new URL("http://192.168.1.104/akdenizapp/login.php");
+                url = new URL("http://192.168.1.103/akdenizapp/login.php");
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();

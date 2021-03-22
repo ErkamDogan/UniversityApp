@@ -9,16 +9,28 @@
         tools:context=".Events">
 
     <TextView
-            android:text="Etkinlikler"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:layout_marginTop="20dp"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:id="@+id/textevents"/>
+        android:text="ETKİNLİKLER"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="#ff7f50"
+        android:id="@+id/textevents"/>
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        />
+
     <ListView
-            android:id="@+id/listView_list_of_announcements_stvs"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="10dp"/>
+        android:id="@+id/listView_list_of_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
+
 </LinearLayout>

@@ -53,12 +53,15 @@
             android:layout_height="20dp"
             android:text="Şikayet"
             android:textSize="15sp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Spinner
+        <androidx.appcompat.widget.AppCompatSpinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Hangi birime ulaştırmak istediğiniz buraya giriniz"
-            android:id="@+id/spinner" android:spinnerMode="dropdown"/>
+            android:id="@+id/spinner" />
+    </FrameLayout>
     <EditText
             android:id="@+id/editText_write_complaint"
             android:layout_width="match_parent"

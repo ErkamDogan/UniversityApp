@@ -1,18 +1,14 @@
 package com.example.akdenizapp;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 
 public class Announcements_stvs extends AppCompatActivity implements HttpResponseImpl {
@@ -23,7 +19,7 @@ public class Announcements_stvs extends AppCompatActivity implements HttpRespons
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_announcements_stvs);
         try {
-            ApiHelper client = new ApiHelper("http://192.168.1.104/akdenizapp/announcement.json",this, "GET");  //Write your url here
+            ApiHelper client = new ApiHelper("http://192.168.1.103/akdenizapp/announcement.json",this, "GET");  //Write your url here
             client.execute();
         } catch (Exception e) {
             e.printStackTrace();

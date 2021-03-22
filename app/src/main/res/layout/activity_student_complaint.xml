@@ -18,10 +18,10 @@
                 android:text="Şikayetlerim" />
 
         <ListView
-                android:id="@+id/listView_list_of_complaints_student"
-                android:layout_width="match_parent"
-                android:layout_height="584dp"
-                android:layout_marginBottom="50dp"/>
+            android:id="@+id/listView_list_of_complaints_student"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:layout_marginBottom="50dp" />
         <Button
                 android:id="@+id/button_create_student_new_complaint"
                 android:layout_width="match_parent"
