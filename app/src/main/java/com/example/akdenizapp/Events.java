@@ -18,7 +18,7 @@ public class Events extends AppCompatActivity implements HttpResponseImpl {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
         try {
-            ApiHelper client = new ApiHelper("http://192.168.1.103/akdenizapp/announcement.json",this, "GET");  //Write your url here
+            ApiHelper client = new ApiHelper(getResources().getString(R.string.baseUrl) + "/announcement.json",this, "GET");  //Write your url here
             client.execute();
         } catch (Exception e) {
             e.printStackTrace();

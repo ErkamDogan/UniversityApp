@@ -19,7 +19,7 @@ public class Announcements_stvs extends AppCompatActivity implements HttpRespons
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_announcements_stvs);
         try {
-            ApiHelper client = new ApiHelper("http://192.168.1.103/akdenizapp/announcement.json",this, "GET");  //Write your url here
+            ApiHelper client = new ApiHelper(getResources().getString(R.string.baseUrl) + "/announcement.json",this, "GET");  //Write your url here
             client.execute();
         } catch (Exception e) {
             e.printStackTrace();

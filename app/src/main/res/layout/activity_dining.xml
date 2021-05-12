@@ -28,72 +28,55 @@
         android:layout_marginBottom="10dp"
         android:background="?android:attr/listDivider" />
 
+
     <TableLayout
+        android:id="@+id/tblToday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        >
+        android:layout_margin="10dp">
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Next" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <TableLayout
+        android:id="@+id/tblNext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/light_sea_green">
+            android:layout_height="match_parent" />
 
-            <TextView
-                android:id="@+id/today_date"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:text=""
-                android:textColor="@color/white"
-                android:padding="10sp"
-                android:textSize="14sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
-            <TextView
-                android:id="@+id/first_meal"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:text=""
-                android:textColor="@color/white"
-                android:padding="10sp"
-                android:textSize="14sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
-            <TextView
-                android:id="@+id/second_meal"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:text=""
-                android:textColor="@color/white"
-                android:padding="10sp"
-                android:textSize="14sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
-            <TextView
-                android:id="@+id/third_meal"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:text=""
-                android:textColor="@color/white"
-                android:padding="10sp"
-                android:textSize="14sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
-            <TextView
-                android:id="@+id/fourth_meal"
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:text=""
-                android:textColor="@color/white"
-                android:padding="10sp"
-                android:textSize="14sp"
-                android:layout_weight="4"
-                android:gravity="center_horizontal"
-                />
-        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </TableLayout>
 </LinearLayout>
