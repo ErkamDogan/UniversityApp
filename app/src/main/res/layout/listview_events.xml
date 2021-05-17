@@ -62,13 +62,15 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Etkinlik Tarihi:"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="match_parent"
+                    android:id="@+id/texteventdate"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="" />
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="#343a40" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

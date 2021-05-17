@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.akdenizapp" >
+    package="com.example.akdenizapp">
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,44 +19,45 @@
         android:roundIcon="@drawable/akdeniz_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true" >
-        <activity android:name=".StudentClubs" >
+        android:usesCleartextTraffic="true">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps">
         </activity>
-        <activity android:name=".Classes" >
-        </activity>
-        <activity android:name=".Shuttle" >
-        </activity>
-        <activity android:name=".feedback" >
-        </activity>
-        <activity android:name=".Events" >
-        </activity>
-        <activity android:name=".Surveys" >
-        </activity>
-        <activity android:name=".Dining" >
-        </activity>
-        <activity android:name=".HomePageVisitor" >
-        </activity>
-        <activity android:name=".AnouncementDetail" >
-        </activity>
-        <activity android:name=".Announcements_stvs" >
-        </activity>
-        <activity android:name=".VisitorNewComplaint" >
-        </activity>
-        <activity android:name=".visitorComplaint" >
-        </activity>
-        <activity android:name=".StudentComplaint" >
-        </activity>
-        <activity android:name=".StudentNewComplaint" >
-        </activity>
-        <activity android:name=".HomePageStudent" >
-        </activity>
-        <activity android:name=".login" >
-        </activity>
+        <activity android:name=".StudentClubs"></activity>
+        <activity android:name=".Classes"></activity>
+        <activity android:name=".Shuttle"></activity>
+        <activity android:name=".feedback"></activity>
+        <activity android:name=".Events"></activity>
+        <activity android:name=".Surveys"></activity>
+        <activity android:name=".Dining"></activity>
+        <activity android:name=".HomePageVisitor"></activity>
+        <activity android:name=".AnouncementDetail"></activity>
+        <activity android:name=".Announcements_stvs"></activity>
+        <activity android:name=".VisitorNewComplaint"></activity>
+        <activity android:name=".visitorComplaint"></activity>
+        <activity android:name=".StudentComplaint"></activity>
+        <activity android:name=".StudentNewComplaint"></activity>
+        <activity android:name=".HomePageStudent"></activity>
+        <activity android:name=".login"></activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.noActionBar"
-            tools:ignore="LockedOrientationActivity" >
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

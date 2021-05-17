@@ -2,12 +2,11 @@
 <androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center|top"
@@ -26,216 +25,279 @@
         tools:layout_editor_absoluteY="197dp" />
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="348dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:columnCount="4"
+        app:columnCount="3"
         app:rowCount="8"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="72dp"
         tools:layout_editor_absoluteY="300dp">
 
-        <ImageButton
-            android:id="@+id/announcements_button"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:background="@drawable/bullhorn"
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            app:layout_row="0"
+            app:layout_column="0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/announcements_button"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/bullhorn"
+                    app:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="Duyurular"
+                    app:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            app:layout_column="1"
+            app:layout_row="0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/events"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/calendar"
+                    app:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="Etkinlikler"
+                    app:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            app:layout_column="2"
+            app:layout_row="0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/complaints_button"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/bubbles2"
+                    app:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="Şikayetler"
+                    app:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
             app:layout_column="0"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="0" />
+            app:layout_row="1">
 
-        <ImageButton
-            android:id="@+id/events"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/calendar"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/map"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/map"
+                    app:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Okul Harita"
+                    app:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
             app:layout_column="1"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="0" />
-
-        <ImageButton
-            android:id="@+id/complaints_button"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/bubbles2"
+            app:layout_row="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/feedback"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/pushpin"
+                    app:layout_gravity="center_horizontal" />
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geri Bildirim"
+                    app:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
             app:layout_column="2"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="0" />
+            app:layout_row="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/zerothree"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/map"
-            app:layout_column="3"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="0" />
+                <ImageButton
+                    android:id="@+id/dining"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/spoonknife"
+                    app:layout_gravity="center_horizontal" />
 
-        <ImageButton
-            android:id="@+id/shuttle"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/buss"
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yemekhane"
+                    app:layout_gravity="center_horizontal"
+                     />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
             app:layout_column="0"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="2" />
+            app:layout_row="2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/feedback"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/pushpin"
+                <ImageButton
+                    android:id="@+id/classes"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/books"
+                    app:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sınıflar"
+                    android:layout_margin="6dp"
+                    app:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
             app:layout_column="1"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="2" />
+            app:layout_row="2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/clubs"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/clubs"
+                    app:layout_gravity="center_horizontal" />
 
-        <ImageButton
-            android:id="@+id/classes"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-
-            android:background="@drawable/books"
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kulüpler"
+                    android:layout_margin="6dp"
+                    app:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
             app:layout_column="2"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="2" />
+            app:layout_row="2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/dining"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/spoonknife"
-            app:layout_column="3"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="2" />
+                <ImageButton
+                    android:id="@+id/survey"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/question"
+                    app:layout_gravity="center_horizontal"/>
 
-        <ImageButton
-            android:id="@+id/clubs"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/clubs"
-            app:layout_column="1"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="4" />
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="Anketler"
+                    app:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-        <ImageButton
-            android:id="@+id/survey"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/question"
-            app:layout_column="2"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="4" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Duyurular"
-            app:layout_column="0"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="1" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Etkinlikler"
-            app:layout_column="1"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="1" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Şikayetler"
-            app:layout_column="2"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="1" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Okul Haritası"
-            app:layout_column="3"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="1" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Shuttle"
-            app:layout_column="0"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="3" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Geri Bildirim"
-            app:layout_column="1"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="3" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Sınıflar"
-            app:layout_column="2"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="3" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Yemekhane"
-            app:layout_column="3"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="3" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Kulüpler"
-            app:layout_column="1"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="5" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Anketler"
-            app:layout_column="2"
-            app:layout_gravity="center_horizontal"
-            app:layout_row="5" />
 
     </androidx.gridlayout.widget.GridLayout>
 

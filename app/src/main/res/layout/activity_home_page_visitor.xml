@@ -41,7 +41,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:background="@drawable/akdeniz_logo"
-                android:id="@+id/zerothree" app:layout_row="0" app:layout_column="3"/>
+                android:id="@+id/map" app:layout_row="0" app:layout_column="3"/>
         <ImageButton
                 android:layout_width="75dp"
                 android:layout_height="75dp"

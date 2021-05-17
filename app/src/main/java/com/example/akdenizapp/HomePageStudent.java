@@ -50,13 +50,13 @@ public class HomePageStudent extends AppCompatActivity {
                 startActivity(t);
             }
         });
-        ((ImageButton) findViewById(R.id.shuttle)).setOnClickListener(new View.OnClickListener() {
+      /*  ((ImageButton) findViewById(R.id.shuttle)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent t = new Intent(HomePageStudent.this,Shuttle.class);
                 startActivity(t);
             }
-        });
+        });*/
         ((ImageButton) findViewById(R.id.feedback)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,8 +92,15 @@ public class HomePageStudent extends AppCompatActivity {
                 startActivity(t);
             }
         });
+        ((ImageButton) findViewById(R.id.map)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t = new Intent(HomePageStudent.this,MapsActivity.class);
+                startActivity(t);
+            }
+        });
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+       // setSupportActionBar(toolbar);
 
         // This will display an Up icon (<-), we will replace it with hamburger later
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
