@@ -33,7 +33,7 @@
 
 
                 <TextView
-                    android:id="@+id/textView45"
+                    android:id="@+id/textEventTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -58,17 +58,20 @@
 
                 <TextView
                     android:id="@+id/textView13"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="90dp"
+                    android:textColor="#ff7f50"
                     android:text="Etkinlik Tarihi:"
                     android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/texteventdate"
+                    android:id="@+id/textEventDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textAlignment="center"
                     android:text=""
                     android:textColor="#343a40" />
             </LinearLayout>
