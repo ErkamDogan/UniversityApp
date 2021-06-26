@@ -10,7 +10,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginBottom="30dp"
         android:orientation="vertical"
-        tools:context=".StudentNewComplaint">
+        tools:context=".StudentNewComplaints">
 
         <TextView
                 android:id="@+id/textView"

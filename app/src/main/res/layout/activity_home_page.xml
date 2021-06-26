@@ -11,14 +11,14 @@
     android:layout_height="match_parent"
     android:gravity="center|top"
     android:orientation="vertical"
-    tools:context=".HomePageStudent">
+    tools:context=".HomePageActivity">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Akdeniz University"
+        android:text="Akdeniz Üniversitesi"
         android:textSize="24sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="88dp"

@@ -16,7 +16,7 @@ public class visitorComplaint extends AppCompatActivity {
         ((Button) findViewById(R.id.button_create_visitor_new_complaint)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent t = new Intent(visitorComplaint.this,VisitorNewComplaint.class);
+                Intent t = new Intent(visitorComplaint.this, NewComplaint.class);
                 startActivity(t);
             }
         });

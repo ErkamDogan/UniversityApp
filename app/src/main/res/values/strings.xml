@@ -16,5 +16,4 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="baseUrl">http://192.168.1.106/akdenizapp</string>
     <string name="title_activity_maps">Map</string>
-
 </resources>

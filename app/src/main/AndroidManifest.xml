@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.akdenizapp">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -20,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
+        <activity android:name=".NavDrawerActivity"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -35,24 +34,23 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps">
-        </activity>
-        <activity android:name=".StudentClubs"></activity>
-        <activity android:name=".Classes"></activity>
-        <activity android:name=".Shuttle"></activity>
-        <activity android:name=".feedback"></activity>
-        <activity android:name=".Events"></activity>
-        <activity android:name=".Surveys"></activity>
-        <activity android:name=".Dining"></activity>
-        <activity android:name=".HomePageVisitor"></activity>
-        <activity android:name=".AnouncementDetail"></activity>
-        <activity android:name=".Announcements_stvs"></activity>
-        <activity android:name=".VisitorNewComplaint"></activity>
-        <activity android:name=".visitorComplaint"></activity>
-        <activity android:name=".StudentComplaint"></activity>
-        <activity android:name=".StudentNewComplaint"></activity>
-        <activity android:name=".HomePageStudent"></activity>
-        <activity android:name=".login"></activity>
+            android:label="@string/title_activity_maps"></activity>
+        <activity android:name=".StudentClubs" />
+        <activity android:name=".Classes" />
+        <activity android:name=".Shuttle" />
+        <activity android:name=".feedback" />
+        <activity android:name=".Events" />
+        <activity android:name=".Surveys" />
+        <activity android:name=".Dining" />
+        <activity android:name=".HomePageVisitor" />
+        <activity android:name=".AnouncementDetail" />
+        <activity android:name=".Announcements_stvs" />
+        <activity android:name=".NewComplaint" />
+        <activity android:name=".visitorComplaint" />
+        <activity android:name=".Complaints" />
+        <activity android:name=".StudentNewComplaints" />
+        <activity android:name=".HomePageActivity" />
+        <activity android:name=".login" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"

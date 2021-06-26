@@ -74,7 +74,7 @@ public class login extends AppCompatActivity {
             try {
 
                 // Enter URL address where your php file resides
-                url = new URL("http://192.168.1.103/akdenizapp/login.php");
+                url = new URL(getResources().getString(R.string.baseUrl)+"/login.php");
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
@@ -164,7 +164,7 @@ public class login extends AppCompatActivity {
                     use sharedPreferences of Android. and logout button to clear sharedPreferences.
                      */
 
-                    Intent intent = new Intent(login.this, HomePageStudent.class);
+                    Intent intent = new Intent(login.this, HomePageActivity.class);
                     startActivity(intent);
                     login.this.finish();
 

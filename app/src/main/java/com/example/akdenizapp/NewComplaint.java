@@ -5,12 +5,12 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
-public class VisitorNewComplaint extends AppCompatActivity {
+public class NewComplaint extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visitor_new_complaint);
+        setContentView(R.layout.activity_new_complaints);
         ArrayList<String> units = new ArrayList<String>();
         units.add("Hangi birime ulaştırmak istediğinizi seçiniz");
 

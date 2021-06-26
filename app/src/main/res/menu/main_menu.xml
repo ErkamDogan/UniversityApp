@@ -5,46 +5,59 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home"
-            android:title="Home" />
+            android:title="Anasayfa" />
         <item
-            android:id="@+id/deneme"
-            android:icon="@drawable/home"
-            android:title="Deneme" />
+            android:id="@+id/nav_announcements"
+            android:icon="@drawable/bullhorn"
+            android:title="Duyurular" />
         <item
-            android:id="@+id/deneme2"
-            android:icon="@drawable/home"
-            android:title="Deneme2" />
+            android:id="@+id/nav_events"
+            android:icon="@drawable/calendar"
+            android:title="Etkinlikler" />
+        <item
+            android:id="@+id/nav_complaints"
+            android:icon="@drawable/bubbles2"
+            android:title="Şikayetler" />
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/map"
+            android:title="Harita" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/pushpin"
+            android:title="Geri Bildirim" />
+        <item
+            android:id="@+id/nav_dinings"
+            android:icon="@drawable/spoonknife"
+            android:title="Yemekhane" />
+        <item
+            android:id="@+id/nav_classes"
+            android:icon="@drawable/books"
+            android:title="Sınıflar" />
+        <item
+            android:id="@+id/nav_clubs"
+            android:icon="@drawable/clubs"
+            android:title="Kulüpler" />
+        <item
+            android:id="@+id/nav_Surveys"
+            android:icon="@drawable/question"
+            android:title="Anketler" />
     </group>
 
         <item android:title="Profile">
             <menu>
                 <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/deneme3"
-                    android:icon="@drawable/home"
-                    android:title="Deneme3" />
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_baseline_login_24"
+                    android:title="Giriş" />
                 <item
-                    android:id="@+id/deneme4"
-                    android:icon="@drawable/home"
-                    android:title="Deneme4" />
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:title="Profil" />
                 </group>
             </menu>
         </item>
 
 
-    <item android:title="Communicate">
-
-        <menu>
-
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/search"
-                android:title="Share" />
-
-            <item
-                android:id="@+id/nav_rate"
-                android:icon="@drawable/search"
-                android:title="Rate Us" />
-        </menu>
-    </item>
 </menu>
