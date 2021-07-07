@@ -285,7 +285,7 @@
                     android:id="@+id/survey"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
-                    android:background="@drawable/question"
+                    android:background="@drawable/ic_baseline_checklist_24"
                     app:layout_gravity="center_horizontal"/>
 
                 <TextView
