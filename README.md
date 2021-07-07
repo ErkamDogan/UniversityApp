@@ -1,3 +1,4 @@
 # UniversityApp
 A mobile application can be used for many different purposes, i.e. allowing students to access Student Information System more easily, making announcements reach to a wider audience, making targeted announcements, informing students, residents and visitors about the university, using ads to support university, appealing to the candidate students and informing them about the opportunities, controlling  university’s own or third party services from a central point and making them more accessible, making  external programs like internship more accessible and easy for students by giving them feedback about their progress or the status of the program and so on. For all this to be possible, university needs a mobile application to make all of these services more “accessible”, and this is what we aim to do. This application thatcan be simple interface to services university has to or will offer
 
+Demo Video: https://youtu.be/F-v29ngckzw
